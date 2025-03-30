@@ -20,7 +20,7 @@ let score = 0;
 
 let scene, camera, renderer, controls;
 
-fetch("../data/exercices.json")
+fetch("data/exercices.json")
   .then(res => res.json())
   .then(data => {
     const parcours = data.parcours.find(p => p.id === parcoursId);

@@ -1,6 +1,6 @@
 const container = document.getElementById("exercicesContainer");
 
-fetch("../data/exercices.json")
+fetch("data/exercices.json")
   .then(res => res.json())
   .then(data => {
     const { parcours = [], exercices = [] } = data;

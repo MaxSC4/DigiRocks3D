@@ -9,7 +9,7 @@ const rocheId = params.get('id');
 const annotationObjects = [];
 
 
-fetch('../data/roches.json')
+fetch('data/roches.json')
   .then(res => res.json())
   .then(roches => {
     const data = roches.find(r => r.id === rocheId);

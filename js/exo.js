@@ -13,7 +13,7 @@ const validerBtn = document.getElementById("valider-btn");
 
 let bonneReponse = "";
 
-fetch("../data/exercices.json")
+fetch("data/exercices.json")
   .then(res => res.json())
   .then(data => {
     const exo = data.find(e => e.id === exerciceId);
