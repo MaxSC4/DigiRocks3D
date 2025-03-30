@@ -1,0 +1,46 @@
+{
+    "parcours": [
+        {
+          "id": "parcours-magmatique",
+          "titre": "Roches magmatiques",
+          "exercices": ["exo-001", "exo-002"]
+        }
+      ],
+
+    "exercices": [
+    {
+      "id": "exo-001",
+      "titre": "Identification d’un minéral",
+      "modele": "../models/roche.glb",
+      "annotation": {
+        "position": [1, 1, 1],
+        "label": "Zone à observer"
+      },
+      "question": "Quel est le minéral indiqué ?",
+      "reponses": [
+        { "texte": "Quartz", "juste": false },
+        { "texte": "Feldspath potassique", "juste": true },
+        { "texte": "Biotite", "juste": false },
+        { "texte": "Plagioclase", "juste": false }
+      ],
+      "feedback": "Il s’agit d’un feldspath potassique, reconnaissable à sa teinte rosée et à sa forme idiomorphe."
+    },
+    {
+        "id": "exo-002",
+        "titre": "Identification d’un minéral",
+        "modele": "../models/roche.glb",
+        "annotation": {
+          "position": [1, 1, 1],
+          "label": "Zone à observer"
+        },
+        "question": "Quel est le minéral indiqué ?",
+        "reponses": [
+          { "texte": "Quartz", "juste": true },
+          { "texte": "Feldspath potassique", "juste": false },
+          { "texte": "Biotite", "juste": false },
+          { "texte": "Plagioclase", "juste": false }
+        ],
+        "feedback": "Il s’agit d’un feldspath potassique, reconnaissable à sa teinte rosée et à sa forme idiomorphe."
+      }
+    ]
+}

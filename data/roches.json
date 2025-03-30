@@ -1,0 +1,63 @@
+[
+    {
+        "id": "UPS-DST-MM1",
+        "nom": "Benmoréiite",
+        "type": "magmatique",
+        "sub": "volcanique",
+        "cours": "TP Magmatisme & Métamorphisme",
+        "image": "assets/benmoreite.jpg",
+        "modele": "models/roche.glb",
+        "miniViewer": true,
+        "localisation": "Cantal",
+        "tp": "TP 1",
+        "analyses": "Silice: 72%, Feldspath: 20%",
+        "annotations":[
+            {
+                "id": "A1",
+                "position": [0, 0, 1.5],
+                "type": "image",
+                "label": "Quartz automorphe",
+                "content": "assets/images/quartz.png"
+            }
+        ]
+    },
+
+    {
+        "id": "UPS-DST-MM1",
+        "nom": "Calcaire oolithique",
+        "type": "sédimentaire",
+        "sub": "volcanique",
+        "cours": "TP Magmatisme & Métamorphisme",
+        "image": "assets/benmoreite.jpg",
+        "modele": "models/roche.glb",
+        "miniViewer": true,
+        "localisation": "Cantal",
+        "tp": "TP 2",
+        "analyses": "Silice: 72%, Feldspath: 20%"
+    },
+
+    {
+        "id": "UPS-DST-MM1",
+        "nom": "Eclogite à grenats",
+        "type": "métamorphique",
+        "sub": "volcanique",
+        "cours": "TP Magmatisme & Métamorphisme",
+        "image": "assets/benmoreite.jpg",
+        "modele": "models/roche.glb",
+        "miniViewer": true,
+        "localisation": "Cantal",
+        "tp": "TP 3",
+        "analyses": "Silice: 72%, Feldspath: 20%"
+    },
+
+    {
+        "id": "UPS-DST-MM1",
+        "nom": "Benmoréiite",
+        "type": "magmatique",
+        "sub": "volcanique",
+        "cours": "TP Magmatisme & Métamorphisme",
+        "image": "assets/benmoreite.jpg",
+        "modele": "models/roche.glb",
+        "miniViewer": true
+    }
+]

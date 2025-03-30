@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Parcours d'exercices – DigiRocks3D </title>
+  <link rel="stylesheet" href="../css/parcours.css">
+</head>
+<body class="auth-bg">
+  <header>
+    <button onclick="location.href='../index.html'" class="btn-accueil">🏠 Accueil</button>
+    <h1 id="parcours-titre">🧪 Parcours</h1>
+  </header>
+
+  <main class="parcours-layout">
+    <section class="viewer-zone">
+      <div id="three-container"></div>
+    </section>
+
+    <section class="question-zone">
+      <h2 id="question-titre"></h2>
+      <p id="question-texte"></p>
+      <form id="reponses-form"></form>
+      <button id="valider-btn">✅ Valider</button>
+      <p id="feedback"></p>
+      <div id="nav-buttons" class="hidden">
+        <button id="next-btn">➡️ Suivant</button>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="../js/parcours.js"></script>
+</body>
+</html>

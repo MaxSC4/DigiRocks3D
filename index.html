@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigiRocks3D</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">DigiRocks3D</h1>
+      <nav class="nav-links">
+        <a href="exercices.html">Exercices</a>
+        <a href="#" id="monCompteBtn" class="btn">👤 Mon compte</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="search-section">
+    <div class="container search-bar">
+      
+      <input type="text" id="searchInput" placeholder="🔍 Rechercher une roche..." />
+  
+      <div class="filter-group">
+        <label>Type :</label>
+        <div class="filter-tags">
+          <button class="filter-tag" data-group="type" data-value="magmatique">Magmatique</button>
+          <button class="filter-tag" data-group="type" data-value="sédimentaire">Sédimentaire</button>
+          <button class="filter-tag" data-group="type" data-value="métamorphique">Métamorphique</button>
+        </div>
+      </div>
+  
+      <div class="filter-group">
+        <label>TP :</label>
+        <div class="filter-tags">
+          <button class="filter-tag" data-group="tp" data-value="TP 1">TP 1</button>
+          <button class="filter-tag" data-group="tp" data-value="TP 2">TP 2</button>
+          <button class="filter-tag" data-group="tp" data-value="TP 3">TP 3</button>
+        </div>
+      </div>
+  
+      <div class="filter-group">
+        <label>Cours :</label>
+        <div class="filter-tags">
+          <button class="filter-tag" data-group="cours" data-value="Cours 1">Cours 1</button>
+          <button class="filter-tag" data-group="cours" data-value="Cours 2">Cours 2</button>
+          <button class="filter-tag" data-group="cours" data-value="Cours 3">Cours 3</button>
+        </div>
+      </div>
+
+      <div class="reset-wrapper">
+        <button id="resetFilters" class="reset-btn">Réinitialiser les filtres</button>
+      </div>
+
+      <div class="result-wrapper">
+        <span id="resultCount">0 résultats trouvés</span>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="card-grid">
+    <div class="container cards">
+    </div>
+  </section>
+
+  <script src="js/filter.js"></script>
+</body>
+</html>
+
+<script>
+  const monCompteBtn = document.getElementById("monCompteBtn");
+
+  if (monCompteBtn) {
+    monCompteBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const user = JSON.parse(localStorage.getItem("user"));
+      if (user) {
+        window.location.href = "auth/compte.html";
+      } else {
+        window.location.href = "auth/login.html";
+      }
+    });
+  }
+</script>
+

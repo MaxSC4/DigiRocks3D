@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mon compte – DigiRocks3D</title>
+  <link rel="stylesheet" href="../css/compte.css" />
+</head>
+<body>
+  <header>
+    <h1>👤 Mon Compte</h1>
+    <button onclick="location.href='../index.html'" class="btn-accueil">🏠 Accueil</button>
+  </header>
+
+  <main class="dashboard">
+
+    <!-- 🧾 Infos personnelles -->
+    <section class="card" id="infos-section">
+      <h2>Mes informations</h2>
+      <p><strong>Nom :</strong> <span id="nom"></span></p>
+      <p><strong>Prénom :</strong> <span id="prenom"></span></p>
+      <p><strong>Email :</strong> <span id="email"></span></p>
+      <p><strong>Rôle :</strong> <span id="role"></span></p>
+      <p id="annee-field" class="hidden"><strong>Année :</strong> <span id="annee"></span></p>
+    </section>
+
+    <!-- ⭐ Activités -->
+    <section class="card">
+      <h2>Mes activités</h2>
+
+      <h3>Favoris</h3>
+      <ul id="favoris-list"></ul>
+
+      <h3>Roches récemment consultées</h3>
+      <ul id="recentes-list"></ul>
+
+    </section>
+
+    <!-- 🎓 Panel enseignant (affiché dynamiquement) -->
+    <section class="card hidden" id="enseignant-section">
+      <h2>Panel Enseignant</h2>
+      <button onclick="location.href='panel.html'">📦 Ajouter un nouveau modèle</button>
+      <h3>Mes modèles enregistrés</h3>
+      <ul id="mes-roches"></ul>
+    </section>
+
+  </main>
+
+  <script type="module" src="../js/account.js"></script>
+</body>
+</html>
+

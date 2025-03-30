@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --saclay-prune: #63003C;
+  --saclay-prune-hover: #510032;
+  --saclay-rose: #C60B46;
+  --saclay-gris-foncé: #313E48;
+  --saclay-gris-clair: #D6DBDF;
+  --background: #f9fafb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--background);
+  color: var(--saclay-gris-foncé);
+  height: 100%;
+  overflow: hidden;
+}
+
+#three-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  background: #f0f0f0;
+}
+
+/* 📊 Sidebar */
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background: #ffffff;
+  border-left: 1px solid var(--saclay-gris-clair);
+  padding: 1.5rem 1rem;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 10;
+  opacity: 1;
+}
+
+.sidebar.closed {
+  transform: translateX(100%);
+  opacity: 0.1;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--saclay-prune);
+}
+
+.sidebar p {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  color: var(--saclay-gris-foncé);
+}
+
+/* 🔘 Bouton toggle sidebar */
+#toggleBtn {
+  position: absolute;
+  top: 1rem;
+  left: -40px;
+  background: var(--saclay-prune);
+  color: white;
+  border: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.sidebar.closed #toggleBtn {
+  transform: rotate(180deg);
+}
+
+/* 🎛️ Barre d’outils */
+.ui-toolbar {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Boutons de la barre */
+.ui-toolbar .btn {
+  background: var(--saclay-prune);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  min-width: 120px;
+  box-sizing: border-box;
+  transition: background 0.2s ease;
+}
+
+.ui-toolbar .btn:hover {
+  background: var(--saclay-prune-hover);
+}
+
+.annotation-popup {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background: white;
+    border: 1px solid var(--saclay-gris-clair);
+    border-radius: 1rem;
+    padding: 0;
+    width: 280px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    z-index: 40;
+    user-select: none;
+  }
+  
+  .annotation-popup.hidden {
+    display: none;
+  }
+  
+  .popup-header {
+    background: var(--saclay-prune);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem 1rem 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+  }
+  
+  .popup-header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .popup-body {
+    padding: 1rem;
+  }
+  
+  .popup-body img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  
+
+  
+  

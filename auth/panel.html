@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ajouter un modèle – DigiRocks3D</title>
+  <link rel="stylesheet" href="../css/panel.css" />
+  <button onclick="location.href='compte.html'" class="btn-retour">🔙 Retour</button>
+</head>
+<body class="auth-bg">
+
+  <h1>Ajouter un nouveau modèle</h1>
+
+  <div class="form-and-viewer">
+
+    <!-- 🧾 Formulaire -->
+    <div class="form-panel">
+      <form id="rocheForm">
+        <label>Nom</label>
+        <input type="text" id="nom" required />
+
+        <label>Identifiant</label>
+        <input type="text" id="nom" placeholder="Ex: UPS-DST-MM1..." required />
+
+        <label>Type</label>
+        <select id="type">
+          <option value="magmatique">Magmatique</option>
+          <option value="sédimentaire">Sédimentaire</option>
+          <option value="métamorphique">Métamorphique</option>
+        </select>
+
+        <label>TP</label>
+        <input type="text" id="tp" />
+
+        <label>Cours</label>
+        <input type="text" id="cours" />
+
+        <label>Année</label>
+        <select id="annee">
+          <option>L2</option><option>L3</option><option>Master</option><option>Doctorant</option>
+        </select>
+
+        <label>Fichier du modèle 3D (.glb)</label>
+        <input type="file" id="glbFile" accept=".glb" required />
+
+        <button type="submit" class="card-button full-width">💾 Enregistrer la roche</button>
+        <p id="resultMessage"></p>
+      </form>
+    </div>
+
+    <!-- 🧊 Viewer -->
+    <div class="viewer-panel">
+      <div id="three-container"></div>
+
+      <div class="annotation-form hidden" id="annotationForm">
+        <h3>Nouvelle annotation</h3>
+        <label>Titre</label>
+        <input type="text" id="annLabel" />
+
+        <label>Type</label>
+        <select id="annType">
+          <option value="text">Texte</option>
+          <option value="image">Image</option>
+        </select>
+
+        <label>Contenu (texte ou lien)</label>
+        <input type="text" id="annContent" />
+
+        <div id="imageUploadSection" class="hidden">
+          <label>Fichier image</label>
+          <input type="file" id="annImageFile" accept="image/*" />
+        </div>
+
+        <div style="display:flex; gap:1rem; margin-top:1rem;">
+          <button type="button" id="addAnnotationBtn">Ajouter</button>
+          <button type="button" id="cancelAnnotationBtn">Annuler</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="../js/panel.js"></script>
+</body>
+</html>
+
+

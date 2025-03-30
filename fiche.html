@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiche Roche – Petro3D</title>
+
+  <link rel="stylesheet" href="css/fiche.css" />
+</head>
+<body>
+
+  <div id="three-container"></div>
+
+  <aside id="sidebar" class="sidebar open">
+    <button id="toggleBtn">⏩</button>
+    <div class="meta">
+      <h2 id="nomRoche">Roche</h2>
+      <p><strong>Type :</strong> <span id="typeRoche"></span></p>
+      <p><strong>Cours :</strong> <span id="coursRoche"></span></p>
+      <p><strong>Localisation :</strong> <span id="localisationRoche"></span></p>
+      <p><strong>TP associé :</strong> <span id="tpRoche"></span></p>
+      <p><strong>Analyses géochimiques :</strong> <span id="analyseRoche"></span></p>
+    </div>
+  </aside>
+
+  <div class="ui-toolbar">
+    <a href="index.html" class="btn">🏠 Accueil</a>
+    <button id="fullscreenBtn" class="btn">⛶ Plein écran</button>
+    <button id="resetBtn" class="btn">🎯 Recentrer</button>
+  </div>
+
+  <div id="annotation-popup" class="annotation-popup draggable hidden">
+    <div class="popup-header" id="popup-header">
+      <strong id="annotation-label">Titre</strong>
+      <button onclick="hideAnnotationPopup()">×</button>
+    </div>
+    <div id="annotation-content" class="popup-body"></div>
+  </div>
+
+  <script type="module" src="js/fiche.js"></script>
+</body>
+</html>
+

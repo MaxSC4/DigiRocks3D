@@ -1,0 +1,148 @@
+:root {
+    --saclay-prune: #63003C;
+    --saclay-prune-hover: #510032;
+    --saclay-rose: #C60B46;
+    --saclay-gris-foncé: #313E48;
+    --saclay-gris-clair: #D6DBDF;
+    --background: #f9fafb;
+  }
+  
+  body.auth-bg {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background);
+    color: var(--saclay-gris-foncé);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: var(--saclay-prune);
+  }
+  
+  .form-and-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+  }
+  
+  .form-panel {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-panel label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+  }
+  
+  .form-panel input,
+  .form-panel select {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid var(--saclay-gris-clair);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .form-panel button {
+    margin-top: 1.5rem;
+    background: var(--saclay-prune);
+    color: white;
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .form-panel button:hover {
+    background: var(--saclay-prune-hover);
+  }
+  
+  .viewer-panel {
+    flex: 2;
+    min-width: 400px;
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  #three-container {
+    width: 100%;
+    height: 600px;
+    min-height: 400px;
+    background: #e5e7eb;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .annotation-form {
+    background: #fefefe;
+    padding: 1rem;
+    border: 1px solid var(--saclay-gris-clair);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  
+  .annotation-form.hidden {
+    display: none;
+  }
+  
+  .annotation-form button {
+    align-self: flex-start;
+    background: var(--saclay-rose);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .annotation-form button:hover {
+    background: var(--saclay-prune);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+button.btn-retour,
+button.btn-accueil {
+  background-color: #D6DBDF;
+  color: #313E48;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button.btn-retour:hover,
+button.btn-accueil:hover {
+  background-color: #C0C5C8;
+}
+
+  
+  
+  

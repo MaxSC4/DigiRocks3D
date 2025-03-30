@@ -1,0 +1,75 @@
+body.auth-bg {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 2rem;
+    color: #313e48;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  h1 {
+    color: #63003C;
+    margin: 0;
+  }
+  
+  .exercices-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .exo-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .exo-card h2 {
+    margin-top: 0;
+    color: #C60B46;
+  }
+  
+  .exo-card p {
+    margin: 0.5rem 0 1rem;
+    color: #444;
+    font-size: 0.95rem;
+  }
+  
+  .exo-card button {
+    background-color: #C60B46;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    align-self: flex-start;
+  }
+  
+  .exo-card button:hover {
+    background-color: #63003C;
+  }
+  
+  .btn-accueil {
+    background-color: #D6DBDF;
+    color: #313E48;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .btn-accueil:hover {
+    background-color: #C0C5C8;
+  }

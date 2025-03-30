@@ -1,0 +1,108 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f9fafb;
+    margin: 0;
+    padding: 2rem;
+    color: #313e48;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  h1 {
+    color: #63003C;
+  }
+  
+  .dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card h2 {
+    margin-top: 0;
+    color: #C60B46;
+  }
+  
+  .card h3 {
+    margin-bottom: 0.5rem;
+    color: #63003C;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #63003C;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    background-color: #C60B46;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+  
+  button:hover {
+    background-color: #63003C;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .delete-btn {
+    background: transparent;
+    color: #C60B46;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .delete-btn:hover {
+    color: #63003C;
+  }
+
+  button.btn-retour,
+button.btn-accueil {
+  background-color: #D6DBDF;
+  color: #313E48;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button.btn-retour:hover,
+button.btn-accueil:hover {
+  background-color: #C0C5C8;
+}
