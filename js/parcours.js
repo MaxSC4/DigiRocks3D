@@ -109,7 +109,7 @@ function enregistrerResultat() {
     <div class='score-final'>
         <h2>🎉 Parcours terminé !</h2>
         <p>Votre score : <strong>${score} / ${exercices.length}</strong></p>
-        <button onclick="location.href='../auth/compte.html'">📂 Voir dans Mon Compte</button>
+        <button onclick="location.href='DigiRocks3D/auth/compte.html'">📂 Voir dans Mon Compte</button>
         <button onclick="location.reload()">🔁 Recommencer ce parcours</button>
     </div>
     `;
